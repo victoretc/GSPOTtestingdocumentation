@@ -3,7 +3,7 @@
 
 Тестовые данные: https://games.alpha.g-spot.website/api/v1/community/comments/1/
 
-1. Step
+1. Step2
 2. Step
 3. Step
 4. Step
