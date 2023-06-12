@@ -1,7 +1,7 @@
 ### Games community
 #### Get comments
 
-Тестовые данные: https://games.alpha.g-spot.website/swagger/
+Тестовые данные: https://games.alpha.g-spot.website/api/v1/community/comments/787141/?page=1&per_page=2
 
 1. Запустить Postman
 2. Создать новую коллекцию или импортировать информацию с swaggera https://games.alpha.g-spot.website/swagger/?format=openapi
@@ -13,7 +13,19 @@
 
 Ожидаемый результат:
 Server response: status code 200 - OK(Просмотр в сообществе созданных комментариев по ID)
-
+{
+  "count": 0,
+  "next": "string",
+  "previous": "string",
+  "results": [
+    {
+      "id": 0,
+      "userUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "createdAt": "2023-06-12T06:30:45.463Z",
+      "text": "string"
+    }
+  ]
+}
 Постусловие: удалить тестовые данные
 
 Автор: Дмитрий

@@ -1,7 +1,7 @@
 ### Games community
 #### POST comments
 
-Тестовые данные: https://games.alpha.g-spot.website/swagger/
+Тестовые данные: https://games.alpha.g-spot.website/api/v1/core/dlc/
 
 1. Запустить Postman
 2. Создать новую коллекцию или импортировать информацию с swaggera https://games.alpha.g-spot.website/swagger/?format=openapi
@@ -20,7 +20,12 @@
 
 Ожидаемый результат:
 Server response: status code 201 - Created
-
+{
+  "game": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "dlc": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
 Постусловие: удалить тестовые данные
 
 Автор: Дмитрий
