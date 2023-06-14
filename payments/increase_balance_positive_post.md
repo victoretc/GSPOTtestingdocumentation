@@ -1,5 +1,5 @@
 ### Payments
-#### Increase Balance
+#### Increase Balance (positive)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/payment_accounts/increase_balance/
 
