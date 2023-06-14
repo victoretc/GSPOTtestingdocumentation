@@ -3,16 +3,16 @@
 
 Тестовые данные: https://payments.alpha.g-spot.website/api/schema/
 
-1. Открыть Postman
-2. Создать новую коллекцию
-3. Создать новый запрос
-4. Выбрать метод GET для Request
-5. Ввести URL: https://payments.alpha.g-spot.website/api/schema/?format=json&lang=ru
-6. Отправить Request
+
+1. Создать новый запрос в Postman
+2. Выбрать метод GET для Request
+3. Ввести URL: https://payments.alpha.g-spot.website/api/schema/?format=json&lang=ru
+4. Отправить Request
 
 Ожидаемый результат: Server response: status code 200 - OK
+Ссылка на ответ
 
-Постусловие: удалить тестовые данные
+Постусловие: -
 
 Автор: Евгений
 
