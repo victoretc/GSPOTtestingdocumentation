@@ -1,0 +1,27 @@
+### Payments
+#### Increase Balance (negative)
+
+Тестовые даныне: https://payments.alpha.g-spot.website/api/v1/payment_accounts/increase_balance/
+
+1. Запустить Postman
+2. Создать новый запрос
+3. Выбрать метод POST 
+4. Ввести URL: https://games.alpha.g-spot.website/api/v1/community/comments/787141/?page=1&per_page=2
+5. Ввести в Body (json):
+{
+  "payment_type": "bank_card",
+  "payment_service": "yookassa",
+  "payment_amount": -1,
+  "user_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "return_url": "string"
+}
+6. Отправить запрос
+
+Ожидаемый овтет: 
+Error: response status is 400
+
+Автор: Георгий
+Тест выполнен
+| Дата | Время | Результат | Имя | Баг № Trello |
+| --- | --- | --- | --- | --- |
+| 2023-06-16 | 00:28 | Passed | Георгий | - | 
