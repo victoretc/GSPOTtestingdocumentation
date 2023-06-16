@@ -129,58 +129,111 @@
 
  **Expected Result:**
  Server response: status code: 201 - Created
+
 {
+
   "name": "string",
+
   "developersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+
   "publishersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+
   "description": "string",
+
   "about": "string",
+
   "age": 2147483647,
+
   "adult": "string",
+
   "type": "GAMES",
+
   "systemRequirements": [
+
     {
+
       "operatingSystem": "LINUX",
+
       "deviceProcessor": "string",
+
       "deviceMemory": "string",
+
       "deviceStorage": "string",
+
       "deviceGraphics": "string",
+
       "typeRequirements": "MINIMUM"
+
     }
+
   ],
+
   "langs": [
+
     {
+
       "languageName": "string",
+
       "interface": true,
+
       "subtitles": true,
+
       "voice": true
+
     }
+
   ],
+
   "socials": [
+
     {
+
       "type": "FACEBOOK",
+
       "url": "string"
+
     }
+
   ],
+
   "productOffer": {
+
     "offer": {
+
       "createdBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+
       "isActive": true,
+
       "products": [
+
         "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+
       ],
+
       "price": {
+
         "amount": "string",
+
         "currency": "RUB",
+
         "createdBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+
         "updatedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+
       }
+
     },
+
     "createdBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+
   },
+
   "genres": [
+
     "string"
+
   ]
+
 }
 
 ###**Post conditions:** вернуть систему в первоначальное состояние
