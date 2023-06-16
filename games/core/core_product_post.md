@@ -1,7 +1,7 @@
 ### Games community
 #### Post comments
 
-Тестовые данные: https://games.alpha.g-spot.website/api/v1/core/product/
+**Тестовые данные:** https://games.alpha.g-spot.website/api/v1/core/product/
 
 **Type:** API
 
@@ -129,7 +129,7 @@
   ]
 }
 
-Post conditions: вернуть систему в первоначальное состояние
+**Post conditions:** вернуть систему в первоначальное состояние
 
 Автор: Дмитрий
 
