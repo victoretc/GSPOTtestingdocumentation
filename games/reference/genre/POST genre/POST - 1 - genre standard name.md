@@ -4,7 +4,7 @@ POST - 1 - genre standard name
 Предварительные условия
 --
 
-1. Информация по авторизации.
+1. [Информация по авторизации](https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md).
 
 2. Тестовые данные:
 
