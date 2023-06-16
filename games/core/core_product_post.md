@@ -12,6 +12,7 @@
 4. Авторизоваться : Username tester, Password tester
 
  **STR**
+
 1.Создать новый запрос
 
 2.Выбрать метод POST для Request
