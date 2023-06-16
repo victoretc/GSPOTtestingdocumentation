@@ -14,13 +14,9 @@
  **STR**
 
 1.Создать новый запрос
-
 2.Выбрать метод POST для Request
-
 3.Ввести URL: https://games.alpha.g-spot.website/api/v1/core/product/
-
 4.Выбрать вкладку Body=>Raw=>JSON
-
 5.Ввести данные в окно ввода Body 
 ```json 
 {
