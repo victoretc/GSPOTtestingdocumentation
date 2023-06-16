@@ -1,24 +1,24 @@
 ### Games community
 #### Post comments
 
-**Тестовые данные:** https://games.alpha.g-spot.website/api/v1/core/product/
+###**Тестовые данные:** https://games.alpha.g-spot.website/api/v1/core/product/
 
-**Type:** API
+###**Type:** API
 
-**Preconditions**: 
+###**Preconditions**: 
 1. Запустить Postman
 2. Выбрать пункт Autorization
 3. Выбрать Type: Basic Auth
 4. Авторизоваться : Username tester, Password tester
 
 
- **STR**
+### **STR**
 1.Создать новый запрос
 2.Выбрать метод POST для Request
 3.Ввести URL: https://games.alpha.g-spot.website/api/v1/core/product/
 4.Выбрать вкладку Body=>Raw=>JSON
 5.Ввести данные в окно ввода Body 
-{
+###{
   "name": "string",
   "developersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "publishersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -71,9 +71,9 @@
     "string"
   ]
 }
- 4.Нажать  "Send"
+ ###4.Нажать  "Send"
 
- **Expected Result:**
+ ###**Expected Result:**
  Server response: status code: 201 - Created
 {
   "name": "string",
@@ -129,7 +129,7 @@
   ]
 }
 
-**Post conditions:** вернуть систему в первоначальное состояние
+###**Post conditions:** вернуть систему в первоначальное состояние
 
 Автор: Дмитрий
 
