@@ -10,9 +10,10 @@
 2. Выбрать пункт Autorization
 3. Выбрать Type: Basic Auth
 4. Авторизоваться : Username tester, Password tester
-  [репозиторий][repo].
+  
+[Тестовые данные][a].
 
-5. [repo]: https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md
+[a]: https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md
 
  **STR**
 
