@@ -6,7 +6,7 @@
 **Type:** API
 
 **Preconditions**: 
-[Тестовые данные][a].
+[Авторизация][a].
 
 [a]: https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md
 
