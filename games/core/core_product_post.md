@@ -11,7 +11,6 @@
 3. Выбрать Type: Basic Auth
 4. Авторизоваться : Username tester, Password tester
 
-
  **STR**
 1.Создать новый запрос
 
