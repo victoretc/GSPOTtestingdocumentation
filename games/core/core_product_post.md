@@ -6,11 +6,6 @@
 **Type:** API
 
 **Preconditions**: 
-1. Запустить Postman
-2. Выбрать пункт Autorization
-3. Выбрать Type: Basic Auth
-4. Авторизоваться : Username tester, Password tester
-  
 [Тестовые данные][a].
 
 [a]: https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md
