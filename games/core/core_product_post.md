@@ -73,12 +73,12 @@
   ]
 }`
  
- ```4.Нажать  "Send"
+ **4.Нажать  "Send"**
 
  **Expected Result:**
  Server response: status code: 201 - Created
 
-``{
+`{
   "name": "string",
   "developersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "publishersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -130,7 +130,7 @@
   "genres": [
     "string"
   ]
-}``
+}`
 
 **Post conditions:** вернуть систему в первоначальное состояние
 
