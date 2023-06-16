@@ -73,7 +73,7 @@
   ]
 }`
  
- 4.Нажать  "Send"
+ ```4.Нажать  "Send"
 
  **Expected Result:**
  Server response: status code: 201 - Created
