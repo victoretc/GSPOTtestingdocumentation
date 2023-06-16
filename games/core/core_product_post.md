@@ -10,7 +10,7 @@
 2. Выбрать пункт Autorization
 3. Выбрать Type: Basic Auth
 4. Авторизоваться : Username tester, Password tester
-
+[Данные авторизации](https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md")
  **STR**
 
 1.Создать новый запрос
