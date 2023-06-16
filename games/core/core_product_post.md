@@ -3,7 +3,7 @@
 
 Тестовые данные: https://games.alpha.g-spot.website/api/v1/core/product/
 
-Type: API
+**Type**: API
 
 **Preconditions** 
 1. Запустить Postman
@@ -13,11 +13,11 @@ Type: API
 
 
 **STR**
-1.Создать новый запрос
-2.Выбрать метод POST для Request
-3.Ввести URL: https://games.alpha.g-spot.website/api/v1/core/product/
-4.Выбрать вкладку Body=>Raw=>JSON
-5.Ввести данные в окно ввода Body 
+ 1.Создать новый запрос
+ 2.Выбрать метод POST для Request
+ 3.Ввести URL: https://games.alpha.g-spot.website/api/v1/core/product/
+ 4.Выбрать вкладку Body=>Raw=>JSON
+ 5.Ввести данные в окно ввода Body 
 {
   "name": "string",
   "developersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -71,10 +71,10 @@ Type: API
     "string"
   ]
 }
-4.Нажать  "Send"
+ 4.Нажать  "Send"
 
 **Expected Result:**
-Server response: status code: 201 - Created
+ Server response: status code: 201 - Created
 {
   "name": "string",
   "developersUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
