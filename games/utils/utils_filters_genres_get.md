@@ -1,5 +1,5 @@
 ### Games utils filters
-#### Get genres
+#### GET genres
 
 **Тестовые данные:** https://games.alpha.g-spot.website/api/v1/utils/filters/genres?limit=5&offset=10
 
@@ -12,7 +12,7 @@
 1. Создать новый запрос
 2. Выбрать метод GET для Request
 3. Ввести URL: https://games.alpha.g-spot.website/api/v1/utils/filters/genres?limit=5&offset=10
-4. Нажать "Send"
+4. Нажать Send
 
 **Expected Result:**
 Server response: status code 200 - OK
