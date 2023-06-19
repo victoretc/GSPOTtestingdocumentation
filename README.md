@@ -12,10 +12,12 @@
 * frontend - тестовая документация, относящаяся к frontend
 * users, games, payments, channels - тестовая документация backend сервисов
     - Структура директрия внутри сервиса повторяет структуру api запросов.
-Название ручки = название папки для группы запросов проверяющих её.
-    - В название тест-кейса содержит positive или negative.
+Название ручки = название папки для группы проверяющих её запросов.
+    - Название тест-кейса содержит positive или negative.
     - Метод пишется в названии файла в конце (get, post, delete и т.д.)
-    - Games/reference/reference_genre_create/positive_standard-name_post.md - тест-кейс backend-сервиса games для проверки genre методом post.
+    - Games/reference/reference_genre_create/positive_standard-name_post.md
+
+- тест-кейс backend-сервиса games для проверки genre методом post.
 * src - для изображений и прочего
 
 Информация по авторизации предоставляется со [ссылкой на данные](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/Authorization_data.md).
