@@ -16,9 +16,6 @@
     - games/community/community_comments_review_id_get.md - тест-кейс, для проверки метода get. 
 * src - для изображений и прочего
 
-<details>
-<summary>\games\reference\genre</summary>
-<details>
-<summary>reference_genre_create</summary>
-</details>
-</details>
+|**swagger**|**github**|
+| :-: | :-: |
+|[Fork](src/img/swagger - path.jpg)|github - path.jpg|
