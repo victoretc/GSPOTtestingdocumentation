@@ -18,4 +18,4 @@
 
 |**swagger**|**github**|
 | :-: | :-: |
-|[Fork](src/img/swagger - path.jpg)|github - path.jpg|
+|![Fork](src/img/swagger - path.jpg)|![Fork](github_path.jpg)|
