@@ -11,11 +11,8 @@
 Структура документации:
 * frontend - тестовая документация, относящаяся к frontend
 * users, games, payments, channels - тестовая документация backend сервисов
-    - структура директрия внутри сервиса повторяет структуру api запросов
+    - структура директрия внутри сервиса повторяет структуру api запросов - название ручки = название папки для группы запросов её проверяющих
+    - в название тест-кейса содержит positive или negative
     - метод пишется в названии файла в конце (get, post, delete и т.д.)
-    - games/community/community_comments_review_id_get.md - тест-кейс, для проверки метода get. 
+    - games/reference/reference_genre_create/positive_standard-name_get.md - тест-кейс backend-сервиса games для проверки genre методом get.
 * src - для изображений и прочего
-
-|**swagger**|**github**|
-| :-: | :-: |
-|![Fork](src/img/swagger_path.jpg)|![Fork](src/img/github_path.jpg)|
