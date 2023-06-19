@@ -11,7 +11,14 @@
 Структура документации:
 * frontend - тестовая документация, относящаяся к frontend
 * users, games, payments, channels - тестовая документация backend сервисов
-    - структура директрий внутри сервиса повторяет структуру api запросов
+    - структура директрия внутри сервиса повторяет структуру api запросов
     - метод пишется в названии файла в конце (get, post, delete и т.д.)
     - games/community/community_comments_review_id_get.md - тест-кейс, для проверки метода get. 
 * src - для изображений и прочего
+
+<details>
+<summary>\games\reference\genre</summary>
+<details>
+<summary>reference_genre_create</summary>
+</details>
+</details>
