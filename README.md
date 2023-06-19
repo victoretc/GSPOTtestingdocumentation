@@ -15,7 +15,7 @@
 Название ручки = название папки для группы запросов проверяющих её.
     - В название тест-кейса содержит positive или negative.
     - Метод пишется в названии файла в конце (get, post, delete и т.д.)
-    - Games/reference/reference_genre_create/positive_standard-name_get.md - тест-кейс backend-сервиса games для проверки genre методом get.
+    - Games/reference/reference_genre_create/positive_standard-name_post.md - тест-кейс backend-сервиса games для проверки genre методом post.
 * src - для изображений и прочего
 
 Информация по авторизации предоставляется со [ссылкой на данные](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/Authorization_data.md).
