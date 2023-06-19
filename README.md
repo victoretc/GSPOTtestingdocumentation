@@ -19,5 +19,4 @@
 * src - для изображений и прочего
 
 Информация по авторизации предоставляется по [ссылке](https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/Authorization%20data.md).
-
-<details><summary>Пример</summary>![Fork](src/img/auth_example.jpg)</details>
+<details><summary>Скриншот</summary>![Fork](src/img/auth_example.jpg)</details>
