@@ -18,4 +18,4 @@
     - Games/reference/reference_genre_create/positive_standard-name_get.md - тест-кейс backend-сервиса games для проверки genre методом get.
 * src - для изображений и прочего
 
-Информация по авторизации предоставляется со [ссылкой на данные](https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/Authorization%20data.md).
+Информация по авторизации предоставляется со [ссылкой на данные](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/Authorization_data.md).

@@ -1,10 +1,10 @@
-POST - 1 - genre standard name
+POST genre standard name
 ===
 
 Предварительные условия
 --
 
-1. [Информация по авторизации](https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md).
+1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
 
 2. Тестовые данные:
 
