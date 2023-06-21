@@ -12,15 +12,15 @@
 
  **STR**
 
-1.Создать новый запрос
+**1.Создать** новый запрос
 
-2.Выбрать метод POST для Request
+**2.Выбрать** метод POST для Request
 
-3.Ввести URL: https://games.alpha.g-spot.website/api/v1/core/system_requirement/
+**3.Ввести URL:** https://games.alpha.g-spot.website/api/v1/core/system_requirement/
 
-4.Выбрать вкладку Body=>Raw=>JSON
+**4.Выбрать вкладку** Body=>Raw=>JSON
 
-5.Ввести данные в окно ввода Body 
+**5.Ввести данные** в окно ввода Body 
 ```json 
 {
   "operatingSystem": "LINUX",
@@ -32,7 +32,7 @@
   "id": "<uuid>"
 }
  ```
- **4.Нажать  "Send"**
+ **6.Нажать  "Send"**
 
  **Expected Result:**
  Server response: status code: 201 - Created
