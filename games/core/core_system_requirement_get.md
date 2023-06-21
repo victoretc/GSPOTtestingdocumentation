@@ -12,13 +12,13 @@
 
  **STR**
 
-**1.Создать:** новый запрос
+**1.Создать** новый запрос
 
-**2.Выбрать метод:** GET для Request
+**2.Выбрать метод** GET для Request
 
-**3.Ввести URL:** https://games.alpha.g-spot.website/api/v1/core/system_requirement/?limit=4&offset=2
+**3.Ввести URL** https://games.alpha.g-spot.website/api/v1/core/system_requirement/?limit=4&offset=2
 
-**4.Нажать:**  "Send"
+**4.Нажать:** "Send"
 
  **Expected Result:**
  Server response: status code: 200 - OK
