@@ -1,5 +1,5 @@
 ### Games community
-#### PUT comments
+#### PATCH comments
 
 **Тестовые данные:** https://games.alpha.g-spot.website/api/v1/core/system_requirement/eba291a9-135d-4693-a0b7-525b27346b74/
 
@@ -14,7 +14,7 @@
 
 **1.Создать** новый запрос
 
-**2.Выбрать** метод PUT для Request
+**2.Выбрать** метод PATCH для Request
 
 **3.Ввести URL:** https://games.alpha.g-spot.website/api/v1/core/system_requirement/eba291a9-135d-4693-a0b7-525b27346b74/
 
@@ -24,12 +24,11 @@
 ```json 
 {
   "operatingSystem": "LINUX",
-  "deviceProcessor": "<string>",
-  "deviceMemory": "<string>",
-  "deviceStorage": "<string>",
-  "deviceGraphics": "<string>",
-  "typeRequirements": "RECOMMEND",
-  "id": "<uuid>"
+  "deviceProcessor": "string",
+  "deviceMemory": "string",
+  "deviceStorage": "string",
+  "deviceGraphics": "Batman",
+  "typeRequirements": "MINIMUM"
 }
  ```
  **6.Нажать  "Send"**
@@ -37,17 +36,15 @@
  **Expected Result:**
  Server response: status code: 200 - OK
 ```json
-
 {
-  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "id": "eba291a9-135d-4693-a0b7-525b27346b74",
   "operatingSystem": "LINUX",
   "deviceProcessor": "string",
   "deviceMemory": "string",
   "deviceStorage": "string",
-  "deviceGraphics": "string",
+  "deviceGraphics": "Batman",
   "typeRequirements": "MINIMUM"
 }
-
 ```
 **Post conditions:** вернуть систему в первоначальное состояние
 
@@ -56,4 +53,4 @@
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-06-21 | 11:53 | PASS | Дмитрий |  | 
+| 2023-06-21 | 12:00 | PASS | Дмитрий |  | 
