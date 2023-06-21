@@ -1,5 +1,5 @@
 ### Payments
-#### Payment Commission (negative - negative amount)
+#### Payment Commission (negative - empty amount)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/payment_accounts/payment_commission/
 
