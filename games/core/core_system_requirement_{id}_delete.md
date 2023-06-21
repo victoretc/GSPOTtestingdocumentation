@@ -18,7 +18,7 @@
 
 **3.Ввести URL:** https://games.alpha.g-spot.website/api/v1/core/system_requirement/eba291a9-135d-4693-a0b7-525b27346b74/
 
-**4.Нажать  "Send"**
+**4.Нажать**  "Send"
 
  **Expected Result:**
  Server response: status code: 204 - No Content
