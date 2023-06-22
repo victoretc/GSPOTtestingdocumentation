@@ -6,9 +6,9 @@
 **Type:** API
 
 **Preconditions**: 
-[Авторизация][a].
+[Авторизоваться][a].
 
-[a]: https://github.com/nastyaist/GSPOTtestingdocumentation/blob/main/games/Authorization%20data.md
+[a]: https://github.com/1fvwka/GSPOTtestingdocumentation/blob/main/Autorization.md
 
  **STR**
 
