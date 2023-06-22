@@ -11,7 +11,7 @@ GET reference subgenre list
 
 2. Вкладка Authorization
 
-Авторизироваться: используя валидные значения Username:tester, Password:tester
+Авторизироваться: использовать валидные значения Username:tester, Password:tester
 
 
 4. Отправить запрос
