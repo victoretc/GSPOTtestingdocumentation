@@ -1,4 +1,4 @@
-### Games reference/languages/id/
+### Games reference/languages/id/ 
 ###### GET reference_languages_read
 
 ### *Pre-conditions:*

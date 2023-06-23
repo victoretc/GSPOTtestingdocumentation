@@ -1,11 +1,20 @@
-### Games reference/languages/
+### Games reference/languages/ 
 ###### GET reference_languages_list
 
 ### *Pre-conditions:*
 1. Отчистить данные из БД "Language"
-2. Создать методом POST https://games.alpha.g-spot.website/api/v1/reference/languages/ два запроса с body: 
-   1. {"name": "ru"} 
-   2. {"name": "en"}
+2. Создать методом POST https://games.alpha.g-spot.website/api/v1/reference/languages/ два запроса с body:
+
+   
+      I.
+      {
+         "name": "ru"
+      }
+
+      II.
+      {
+         "name": "en"
+      }
    
 ### *Step:*
 1. Создать в Postman новый запрос: ***GET***, url: ***https://games.alpha.g-spot.website/api/v1/reference/languages/***
