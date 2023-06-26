@@ -3,7 +3,7 @@
 
 ### *Pre-conditions:*
 1. Отчистить данные из БД "Language"
-2. Создать методом POST https://games.alpha.g-spot.website/api/v1/reference/languages/ два запроса с body:
+2. Создать методом POST https://games.alpha.g-spot.website/api/v1/reference/languages/ запрос с body:
 
 
       {

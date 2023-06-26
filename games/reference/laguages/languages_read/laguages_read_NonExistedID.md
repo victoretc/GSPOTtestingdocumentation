@@ -1,16 +1,11 @@
 ### Games reference/languages/id/ 
 ###### GET reference_languages_read
+###### id is not existed
 
 ### *Pre-conditions:*
 1. Отчистить данные из БД "Language"
-2. Создать методом POST https://games.alpha.g-spot.website/api/v1/reference/languages/ запрос с body:
-
-
-      {
-         "name": "ru"
-      }
-
-3. Переписать id полученный в Response Body (теле ответа)
+2. Создать методом GET https://games.alpha.g-spot.website/api/v1/reference/languages/ список существующих записей
+3. Выбрать id, которого не существует в полученном списке
 
 ### *Step:*
 1. Создать в Postman новый запрос: ***GET***, url: ***https://games.alpha.g-spot.website/api/v1/reference/languages/0/*** (**вместо 0 вставить id полученный в Pre-conditions**)
@@ -18,17 +13,13 @@
 3. Нажать "***Send***" ("Отправить")
 
 ### *Expected result:*
-    Server response: status code 200 - OK
+    Server response: status code 404 - Not Found
 
-body ( json, id назначается автоматически, может отличаться от скрина ниже ):
+body:
 
-      { 
-         "id": 1,  
-         "name": "ru" 
-      }
-
-### *Post-conditions:*
-1. Отчистить данные из БД "Language"
+        {
+            "detail": "Страница не найдена."
+        }
 
 
 Автор: IvanKorolev13
@@ -37,4 +28,4 @@ body ( json, id назначается автоматически, может о
 
 | Дата       | Время | Результат | Имя | Баг № Trello |
 |------------|-------| --- | --- | --- |
-| 2023-06-23 | 08:50 | Passed | IvanKorolev13 | --- | 
+| 2023-06-26 | 11:50 | Passed | IvanKorolev13 | --- | 
