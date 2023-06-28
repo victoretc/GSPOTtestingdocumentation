@@ -1,16 +1,12 @@
-POST negativespecify non-existing id
-===
+POST destroyed request
 
 Предварительные условия
 --
 
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
-2. 14 > id последнего в списке жанра в БД > 14, но не равен 14.
-3. Тестовые данные:
+2. Тестовые данные:
 
-name = "инди"
-
-id = "15"
+запрос с ошибками в синтаксисе, см. п. 3
 
 Действия в Postman
 --
@@ -28,9 +24,9 @@ id = "15"
 
 ```json
 {
-  "name": "инди",
-  "id": "15"
-}
+  "name": "any_name,
+  "id": "<integer>"
+
 ```
 
 4. Отправить запрос
@@ -38,13 +34,12 @@ id = "15"
 Ожидаемый результат
 --
 
-1. Status ответа: 201 Created.
-2. В Body ответа вернулись id и name созданного жанра. id создан новый, не равен "15". Пример:
+1. Status ответа: 400 Bad Request.
+2. В ответ вернулось сообщение:
 
 ```
 {
-    "id": 111,
-    "name": "инди"
+    "detail": "JSON parse error - Invalid control character at: line 2 column 21 (char 22)"
 }
 ```
 
