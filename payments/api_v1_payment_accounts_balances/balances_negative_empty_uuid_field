@@ -1,0 +1,23 @@
+### Payments
+#### Balances (negative)
+
+Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/
+
+
+1. Создать новый запрос в Postman
+2. Выбрать метод POST для Request
+3. Ввести URL: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/
+4. Ввести в Body(json):
+{
+  "uuid_list": [  ]
+}
+5. Отправить Request
+
+Ожидаемый результат: Error: response status is 400
+
+Автор: Георгий
+
+Тест выполнен
+| Дата | Время | Результат | Имя | Баг № Trello |
+| --- | --- | --- | --- | --- |
+| 2023-06-27 | 22:19 | Filed | Георгий | https://trello.com/c/V7cSxIlW | 
