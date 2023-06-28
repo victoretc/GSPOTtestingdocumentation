@@ -1,0 +1,21 @@
+ПРЕДУСЛОВИЕ
+
+1. Авторизоваться как разработчик (?)
+
+ШАГИ
+
+1. Создать сотрудника компании с помощью POST запроса /api/v1/developer/employee/
+Тело запроса:
+{
+            "username": "company_user1",
+            "first_name": "company_user1",
+            "last_name": "company_user1",
+            "email": "company_user1@example.com",
+            "phone": "9803449861",
+            "country": 1,
+            "is_banned": False,
+        }
+
+ОЖИДАЕМЫЙ РЕЗУЛЬТАТ
+
+Ответ 201 Created.
