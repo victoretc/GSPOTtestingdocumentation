@@ -1,15 +1,15 @@
-POST genre standard name
+POST negativespecify existing id
 ===
 
 Предварительные условия
 --
 
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
-2. Тестовые данные:
+2. В БД есть жанр с id = "111".
+3. Тестовые данные:
+name = "Пиксельная графика"
 
-name = "пазл"
-
-id - не меняем.
+id = "111"
 
 Действия в Postman
 --
@@ -27,8 +27,8 @@ id - не меняем.
 
 ```json
 {
-  "name": "пазл",
-  "id": "<integer>"
+  "name": "Пиксельная графика",
+  "id": "111"
 }
 ```
 
@@ -38,12 +38,12 @@ id - не меняем.
 --
 
 1. Status ответа: 201 Created.
-2. В Body ответа вернулись id и name созданного жанра. Пример:
+2. В Body ответа вернулись id и name созданного жанра. id создан новый, не равен "111". Пример:
 
 ```
 {
-    "id": 33,
-    "name": "пазл"
+    "id": 112,
+    "name": "Пиксельная графика"
 }
 ```
 
@@ -54,4 +54,4 @@ id - не меняем.
 
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|negative_specify-existing-id-post|-|

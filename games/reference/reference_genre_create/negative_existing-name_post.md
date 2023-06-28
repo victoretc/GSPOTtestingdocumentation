@@ -1,13 +1,14 @@
-POST genre standard name
+POST negative existing name
 ===
 
 Предварительные условия
 --
 
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
-2. Тестовые данные:
+2. В базе данных есть жанр с именем "Приключения".
+3. Тестовые данные:
 
-name = "пазл"
+name = "Приключения"
 
 id - не меняем.
 
@@ -27,7 +28,7 @@ id - не меняем.
 
 ```json
 {
-  "name": "пазл",
+  "name": "Приключения",
   "id": "<integer>"
 }
 ```
@@ -37,13 +38,14 @@ id - не меняем.
 Ожидаемый результат
 --
 
-1. Status ответа: 201 Created.
-2. В Body ответа вернулись id и name созданного жанра. Пример:
+1. Status ответа: 400 Bad Request.
+2. Вернулся ответ:
 
 ```
 {
-    "id": 33,
-    "name": "пазл"
+    "name": [
+        "genre с таким Genre уже существует."
+    ]
 }
 ```
 
@@ -54,4 +56,4 @@ id - не меняем.
 
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|negative_existing-name_post|-|

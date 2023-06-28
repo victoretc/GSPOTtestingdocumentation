@@ -1,5 +1,4 @@
-POST genre standard name
-===
+POST negative genre double with similar names
 
 Предварительные условия
 --
@@ -7,7 +6,8 @@ POST genre standard name
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
 2. Тестовые данные:
 
-name = "пазл"
+name = "double_different1"
+name = "double_different2"
 
 id - не меняем.
 
@@ -27,7 +27,8 @@ id - не меняем.
 
 ```json
 {
-  "name": "пазл",
+  "name": "double_different1",
+  "name": "double_different2",
   "id": "<integer>"
 }
 ```
@@ -38,12 +39,12 @@ id - не меняем.
 --
 
 1. Status ответа: 201 Created.
-2. В Body ответа вернулись id и name созданного жанра. Пример:
+2. В Body ответа вернулись id и name созданного жанра равное второй строке name в json-запросе. Пример:
 
 ```
 {
-    "id": 33,
-    "name": "пазл"
+    "id": 123,
+    "name": "double_different2"
 }
 ```
 
@@ -54,4 +55,4 @@ id - не меняем.
 
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|negative_genre-double-with-different-names_post|-|

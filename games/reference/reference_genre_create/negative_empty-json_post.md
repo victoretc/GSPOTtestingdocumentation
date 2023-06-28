@@ -1,4 +1,4 @@
-POST genre standard name
+POST negative empty json
 ===
 
 Предварительные условия
@@ -7,9 +7,7 @@ POST genre standard name
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
 2. Тестовые данные:
 
-name = "пазл"
-
-id - не меняем.
+пустой Body
 
 Действия в Postman
 --
@@ -23,27 +21,19 @@ id - не меняем.
 3. Вкладка Body
 - выбрать тип raw
 - выбрать формат JSON
-- тело запроса:
-
-```json
-{
-  "name": "пазл",
-  "id": "<integer>"
-}
-```
 
 4. Отправить запрос
 
 Ожидаемый результат
 --
-
-1. Status ответа: 201 Created.
-2. В Body ответа вернулись id и name созданного жанра. Пример:
+1. Status ответа: 400 Bad Request.
+2. В ответе вернулось:
 
 ```
 {
-    "id": 33,
-    "name": "пазл"
+    "name": [
+        "Обязательное поле."
+    ]
 }
 ```
 
@@ -54,4 +44,4 @@ id - не меняем.
 
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|negative_empty-json_post|-|
