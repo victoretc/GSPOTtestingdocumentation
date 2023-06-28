@@ -1,4 +1,4 @@
-POST genre standard name
+POST genre 51 symbols
 ===
 
 Предварительные условия
@@ -7,7 +7,7 @@ POST genre standard name
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
 2. Тестовые данные:
 
-name = "пазл"
+name = "cFp167Q02928SxOfCzxCTZJ7kXDRovkrIycasKZv7tdbSM94hDd"
 
 id - не меняем.
 
@@ -27,7 +27,7 @@ id - не меняем.
 
 ```json
 {
-  "name": "пазл",
+  "name": "cFp167Q02928SxOfCzxCTZJ7kXDRovkrIycasKZv7tdbSM94hDd",
   "id": "<integer>"
 }
 ```
@@ -37,13 +37,14 @@ id - не меняем.
 Ожидаемый результат
 --
 
-1. Status ответа: 201 Created.
-2. В Body ответа вернулись id и name созданного жанра. Пример:
+1. Status ответа: 400 Bad Request.
+2. В ответе вернулось:
 
 ```
 {
-    "id": 33,
-    "name": "пазл"
+    "name": [
+        "Убедитесь, что это значение содержит не более 50 символов."
+    ]
 }
 ```
 
@@ -54,4 +55,4 @@ id - не меняем.
 
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|negative_genre-51-symbol_post|-|

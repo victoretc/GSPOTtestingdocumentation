@@ -1,4 +1,4 @@
-POST genre standard name
+POST genre 50 symbols
 ===
 
 Предварительные условия
@@ -7,7 +7,7 @@ POST genre standard name
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
 2. Тестовые данные:
 
-name = "пазл"
+name = "Y5WP37UCTZcJZEbNJdWYywXBftwi1MlLl8mtDhjRJ7TMrXXkPv"
 
 id - не меняем.
 
@@ -27,7 +27,7 @@ id - не меняем.
 
 ```json
 {
-  "name": "пазл",
+  "name": "Y5WP37UCTZcJZEbNJdWYywXBftwi1MlLl8mtDhjRJ7TMrXXkPv",
   "id": "<integer>"
 }
 ```
@@ -42,8 +42,8 @@ id - не меняем.
 
 ```
 {
-    "id": 33,
-    "name": "пазл"
+    "id": 108,
+    "name": "Y5WP37UCTZcJZEbNJdWYywXBftwi1MlLl8mtDhjRJ7TMrXXkPv"
 }
 ```
 
@@ -54,4 +54,4 @@ id - не меняем.
 
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|positive_genre-50-symbols_post|-|

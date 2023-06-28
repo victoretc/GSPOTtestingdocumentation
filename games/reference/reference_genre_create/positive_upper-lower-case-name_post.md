@@ -1,4 +1,4 @@
-POST genre standard name
+POST upper lower case name
 ===
 
 Предварительные условия
@@ -7,7 +7,7 @@ POST genre standard name
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
 2. Тестовые данные:
 
-name = "пазл"
+name = "ШУТер"
 
 id - не меняем.
 
@@ -18,6 +18,7 @@ id - не меняем.
 - URL - games.alpha.g-spot.website/api/v1/reference/genre/
 
 2. Вкладка Authorization
+
 ввести данные по авторизации - см. информацию по авторизации в предварительных условиях.
 
 3. Вкладка Body
@@ -27,7 +28,7 @@ id - не меняем.
 
 ```json
 {
-  "name": "пазл",
+  "name": "ШУТер",
   "id": "<integer>"
 }
 ```
@@ -43,7 +44,7 @@ id - не меняем.
 ```
 {
     "id": 33,
-    "name": "пазл"
+    "name": "ШУТер"
 }
 ```
 
@@ -52,6 +53,7 @@ id - не меняем.
 Прохождение тест-кейса:
 ----------------
 
+
 |**Дата**|**Время**|**Результат**|**Имя**|**Баг № Trello**|
 | :-: | :-: | :-: | :-: | :-: |
-|27.06.2023|19:15|Passed|positive_standard-name_post|-|
+|27.06.2023|19:15|Passed|positive_upper-lower-case-name_post|-|
