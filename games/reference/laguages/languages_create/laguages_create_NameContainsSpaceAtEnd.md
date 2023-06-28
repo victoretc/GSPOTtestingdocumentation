@@ -10,7 +10,7 @@
          "name": "ru "
          }
 
-3. Заполнить вкладку ***Authorization***: type- ***Basic Auth***, Username- ***tester***, Password- ***tester***
+3. Заполнить вкладку ***Authorization*** [данными для авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/Authorization_data.md)
 4. Нажать "***Send***" ("Отправить")
 
 ### *Expected result:*
