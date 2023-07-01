@@ -1,5 +1,5 @@
 ### Payments
-#### External_payments_services_positive_post
+#### External_payments_services_positive_input_latin_value_post
 
 Тестовые данные: https://payments.alpha.g-spot.website/api/v1/external_payments/services/
 
@@ -15,11 +15,11 @@
   "name": "string"
 }
 
-5. Ввести данные в поле "name"-"qiwi"
+5. Ввести данные на латинице в поле "name"-(пример "qiwi")
 
-5. Нажать кнопку “Send”
+6. Нажать кнопку “Send”
 
-Ожидаемый результат: Server response status code 201 Ok
+Ожидаемый результат: Server response status code 201 Created Ok
 
 Body response:
 
@@ -29,11 +29,11 @@ Body response:
     "name": "qiwi"
   }
 ]
-
+Постусловие: удалить тестовые данные
 
 Автор: Василий
 
 Тест выполнен
-|     Дата      | Время | Результат |   Имя   | Баг № Trello |
-|     ---       |  ---  |    ---    |   ---   |      ---     |
-|  2023-06-28   | 13:10 |   Passed  | Василий |       -      | 
+|     Дата    | Время | Результат |   Имя   | Баг№Trello|
+|     ---     |  ---  |    ---    |   ---   |    ---    |
+|  2023-06-28 | 13:10 |   Passed  | Василий |     -     | 
