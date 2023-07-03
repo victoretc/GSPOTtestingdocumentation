@@ -1,0 +1,25 @@
+### Payments
+#### Services_{id}_negative_input_non-existent _id_get
+
+Тестовые данные: https://payments.alpha.g-spot.website/api/v1/external_payments/services/
+
+
+1. Создать новый запрос в Postman=>выбрать метод POST
+2. Ввести URL: https://payments.alpha.g-spot.website/api/v1/external_payments/services/
+3. Ввести в конец URL номер несуществующего id сервиса через / (пример /7/)
+4. Нажать кнопку “Send”
+
+Ожидаемый результат: Server response status code 404 Not Found
+
+Body response:
+{
+    "detail": "Not found."
+}
+
+
+Автор: Василий
+
+Тест выполнен
+|    Дата    | Время | Результат |   Имя   | Баг № Trello |
+|     ---    |  ---  |    ---    |   ---   |      ---     |
+| 2023-07-01 | 19:00 |   Passed  | Василий |       -      | 
