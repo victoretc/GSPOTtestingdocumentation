@@ -1,5 +1,5 @@
 ### Payments
-#### Payment Commission (positive - max amount)
+#### Payment Accounts Payment Commission (negative - letters in total)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/payment_accounts/payment_commission/
 
@@ -7,17 +7,17 @@
 1. Создать новый запрос в Postman
 2. Выбрать метод POST для Request
 3. Ввести URL: https://payments.alpha.g-spot.website/v1/payment_accounts/payment_commission/
-4. Ввести в Body:
+4. Ввести в Body -> raw -> JSON:
 {
   "payment_type": "bank_card",
   "payment_service": "yookassa",
-  "payment_amount": 1000000000
+  "payment_amount": money
 }
 5. Отправить Request
 
-Ожидаемый результат: Server response: status code 201 - OK
+Ожидаемый результат: Server response: status code 400 - Bad Request
 {
-    "amount with commission": 1000000000.0
+    "detail": "JSON parse error - Expecting value: line 4 column 21 (char 89)"
 }
 
 
@@ -28,4 +28,4 @@
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-06-14 | 11:50 | Failed | Евгений | https://trello.com/c/nhOBTU9c | 
+| 2023-06-14 | 11:15 | Passed | Евгений | - | 

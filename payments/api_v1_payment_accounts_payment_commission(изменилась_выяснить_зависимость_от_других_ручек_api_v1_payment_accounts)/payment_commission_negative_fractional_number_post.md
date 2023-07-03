@@ -1,5 +1,5 @@
 ### Payments
-#### Payment Commission (negative_fractional_number)
+#### Payment Accounts Payment Commission (negative_fractional_number)
 
 Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/payment_commission/
 
