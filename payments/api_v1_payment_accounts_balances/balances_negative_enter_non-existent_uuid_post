@@ -1,0 +1,29 @@
+### Payments
+#### Balances (negative)
+
+Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/
+
+
+1. Создать новый запрос в Postman
+2. Выбрать метод POST для Request
+3. Ввести URL: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/
+4. Ввести в Body(json):
+{
+  "uuid_list": [
+    "aaf5f6b2-d595-486a-8e51-108d3b175445"
+  ]
+}
+5. Отправить Request
+
+Ожидаемый результат: Error: response status is 400
+{
+  "detail": "Field user_uuid with next values {UUID('aaf5f6b2-d595-486a-8e51-108d3b175445')} not found in database."
+}
+
+
+Автор: Георгий
+
+Тест выполнен
+| Дата | Время | Результат | Имя | Баг № Trello |
+| --- | --- | --- | --- | --- |
+| 2023-06-27 | 21:33 | Passed | Георгий |  | 

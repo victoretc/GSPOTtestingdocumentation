@@ -1,0 +1,33 @@
+### Payments
+#### Balances (negative)
+
+Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/
+
+
+1. Создать новый запрос в Postman
+2. Выбрать метод POST для Request
+3. Ввести URL: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/
+4. Ввести в Body(json):
+{
+  "uuid_list": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa"
+  ]
+}
+5. Отправить Request
+
+Ожидаемый результат: Error: response status is 400
+{
+  "uuid_list": {
+    "0": [
+      "Must be a valid UUID."
+    ]
+  }
+}
+
+
+Автор: Георгий
+
+Тест выполнен
+| Дата | Время | Результат | Имя | Баг № Trello |
+| --- | --- | --- | --- | --- |
+| 2023-06-27 | 21:22 | Passed | Георгий |  | 
