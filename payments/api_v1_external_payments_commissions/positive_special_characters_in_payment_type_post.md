@@ -1,5 +1,5 @@
 ### Payments
-#### External Payments Payment Commission (positive)
+#### External Payments Payment Commission (positive - special characters in payment_type)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/
 
@@ -12,7 +12,7 @@
 3. Ввести URL: https://payments.alpha.g-spot.website/v1/external_payments/commissions/
 4. Ввести в Body -> raw -> JSON:
 {
-  "payment_type": "yoo_money",
+  "payment_type": "@@@@",
   "commission": "1",
   "payment_service_id": 8
 }
@@ -23,8 +23,8 @@
 Body response:
 
 {
-    "id": 16,
-    "payment_type": "yoo_money",
+    "id": 18,
+    "payment_type": "@@@@",
     "commission": "1.00",
     "payment_service_id": 8
 }
@@ -37,4 +37,4 @@ Body response:
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-06-30 | 10:30 | Passed | Евгений | - | 
+| 2023-07-04 | 17:50 | Passed | Евгений | - | 
