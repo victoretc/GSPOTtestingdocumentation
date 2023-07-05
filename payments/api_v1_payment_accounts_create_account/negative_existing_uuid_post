@@ -1,0 +1,29 @@
+### Payments
+#### create_account (negative)
+
+Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/create_account/
+
+
+1. Создать новый запрос в Postman
+2. Выбрать метод POST для Request
+3. Ввести URL: https://payments.alpha.g-spot.website/api/v1/payment_accounts/create_account/
+4. Ввести в Body(json):
+{
+    "user_uuid": "ed4b42d6-45f0-471c-88bc-0571270fb374"
+}
+5. Отправить Request
+
+Ожидаемый результат: Error: response status is 409
+Пример ответа:
+{
+  "error": "A user with this UUID already exists"
+}
+
+
+
+Автор: Георгий
+
+Тест выполнен
+| Дата | Время | Результат | Имя | Баг № Trello |
+| --- | --- | --- | --- | --- |
+| 2023-07-04 | 23:52 | Passed | Георгий |  | 
