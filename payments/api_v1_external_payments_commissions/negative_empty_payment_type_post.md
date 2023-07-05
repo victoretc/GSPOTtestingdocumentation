@@ -1,5 +1,5 @@
 ### Payments
-#### External Payments Payment Commission (positive)
+#### External Payments Payment Commission (negative - empty payment_type)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/
 
@@ -12,21 +12,20 @@
 3. Ввести URL: https://payments.alpha.g-spot.website/v1/external_payments/commissions/
 4. Ввести в Body -> raw -> JSON:
 {
-  "payment_type": "yoo_money",
+  "payment_type": "",
   "commission": "1",
   "payment_service_id": 8
 }
 5. Отправить Request
 
-Ожидаемый результат: Server response: status code 201 - OK
+Ожидаемый результат: Server response: status code 400 - bad request
 
 Body response:
 
 {
-    "id": 16,
-    "payment_type": "yoo_money",
-    "commission": "1.00",
-    "payment_service_id": 8
+    "payment_type": [
+        "This field may not be blank."
+    ]
 }
 
 
@@ -37,4 +36,4 @@ Body response:
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-06-30 | 10:30 | Passed | Евгений | - | 
+| 2023-07-04 | 19:05 | Passed | Евгений | - | 

@@ -1,10 +1,10 @@
 ### Payments
-#### External Payments Payment Commission (positive)
+#### External Payments Payment Commission (negative - non existent payment_service_id)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/
 
 
-Предусловия: сервис должен быть создан (с помощью api/v1/external_payments/services/ метод POST) - из него берется id для "payment_service_id"
+Предусловия: сервис должен быть создан (с помощью api/v1/external_payments/services/ метод POST) - из него берется id для "payment_service_id" (в данном случае - несуществующий)
 
 
 1. Создать новый запрос в Postman
@@ -14,19 +14,18 @@
 {
   "payment_type": "yoo_money",
   "commission": "1",
-  "payment_service_id": 8
+  "payment_service_id": 107
 }
 5. Отправить Request
 
-Ожидаемый результат: Server response: status code 201 - OK
+Ожидаемый результат: Server response: status code 400 - bad request
 
 Body response:
 
 {
-    "id": 16,
-    "payment_type": "yoo_money",
-    "commission": "1.00",
-    "payment_service_id": 8
+    "payment_service_id": [
+        "Invalid pk \"107\" - object does not exist."
+    ]
 }
 
 
@@ -37,4 +36,4 @@ Body response:
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-06-30 | 10:30 | Passed | Евгений | - | 
+| 2023-07-04 | 19:10 | Passed | Евгений | - | 
