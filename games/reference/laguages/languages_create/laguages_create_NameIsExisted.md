@@ -2,6 +2,9 @@
 ###### POST reference_languages_create
 ###### language name is existed
 
+### *Preconditions:*
+1. В БД есть language с name = "ru"
+
 ### *Step:*
 1. Создать в Postman новый запрос: ***POST***, url: https://games.alpha.g-spot.website/api/v1/reference/languages/
 2. Заполнить вкладку ***body***: чек-бокс- ***row***, тип отображения- сменить Text на ***JSON***, в поле ввода ввести-
