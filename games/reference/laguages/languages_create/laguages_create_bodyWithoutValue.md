@@ -1,29 +1,27 @@
 ### Games reference/languages/ 
 ###### POST reference_languages_create
+###### body without value
 
 ### *Step:*
 1. Создать в Postman новый запрос: ***POST***, url: https://games.alpha.g-spot.website/api/v1/reference/languages/
 2. Заполнить вкладку ***body***: чек-бокс- ***row***, тип отображения- сменить Text на ***JSON***, в поле ввода ввести-
 
         {
-         "name": "ru"
+         "name"
          }
 
 3. Заполнить вкладку ***Authorization***: type- ***Basic Auth***, Username- ***tester***, Password- ***tester***
 4. Нажать "***Send***" ("Отправить")
 
 ### *Expected result:*
-    Server response: status code 201 - Created
+    Server response: status code 400 - Bad Request
 
-body ( json, id назначается автоматически, может отличаться от скрина ниже ):
+body содержит:
 
-      { 
-         "id": 1,  
-         "name": "ru" 
+      {
+         "detail": 
+            "JSON parse error - Expecting ':' delimiter: {указания на место ошибки}"
       }
-
-### *Post-conditions:*
-1. Отчистить данные из БД "Language"
 
 
 Автор: IvanKorolev13
@@ -32,4 +30,4 @@ body ( json, id назначается автоматически, может о
 
 | Дата       | Время | Результат | Имя | Баг № Trello |
 |------------|-------| --- | --- | --- |
-| 2023-06-23 | 11:00 | Passed | IvanKorolev13 | --- | 
+| 2023-07-06 | 17:05 | Passed | IvanKorolev13 | --- | 
