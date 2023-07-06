@@ -1,33 +1,31 @@
-GET - reference genre read
+GET - positive idempotentnost genre
 ===
 
 Предварительные условия
 --
 1. [Информация по авторизации](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/Authorization_data.md).
+2. В базе данных есть жанр с id = 139.
 
 Действия в Postman
 --
-1. Создать жанр по [тест-кейсу](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/games/reference/reference_genre_create/positive_standard-name_post.md) с тестовыми данными:
-- name = "action"
-- id - не меняем.
-
-2. Сохранить id нового жанра.
-
-3. Создать запрос
+1. Создать запрос
 - метод - GET
 - URL - games.alpha.g-spot.website/api/v1/reference/genre/:id/
 
-4. Вкладка Params / таблица Path Variables
-- для id задать Value = id созданного в п. 1 жанра
+2. Вкладка Params / таблица Path Variables
+- для id задать Value = 139
 
-4. Вкладка Authorization
+3. Вкладка Authorization
 ввести данные по авторизации - см. информацию по авторизации в предварительных условиях.
 
-5. Вкладка Headers
-- Значение Key = Accept
-- Значение Value = application/json
+4. Вкладка Headers
+- Столбец Key, значение = Accept
+- Столбец Value, значение = application/json
 
-6. Отправить запрос
+5. Отправить запрос.
+6. Сохранить статус-код ответа и id / name жанра.
+7. Отправить запрос во второй раз.
+8. Статус-код ответа и id / name жанра должны быть равные полученным в п. 6) значениям.
 
 Ожидаемый результат
 --
@@ -36,8 +34,8 @@ GET - reference genre read
 
 ```
 {
-    "id": 3,
-    "name": "action"
+    "id": 139,
+    "name": "admit"
 }
 ```
 
