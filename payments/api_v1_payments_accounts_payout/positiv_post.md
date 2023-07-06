@@ -5,8 +5,11 @@ PAYOUT FOR DEVELOPERS
 Тестовые данные: https://payments.alpha.g-spot.website/v1/payments_accounts/payout/
 
 1.Создать новый запрос в Postman
+
 2.Выбрать метод POST для Request
+
 3.Ввести URL: https://payments.alpha.g-spot.website/v1/payments_accounts/payout/
+
 4.Ввести в Body -> raw -> JSON: {"amount": {"value", "currency", "payout_destination_data": "type_", "account_number", "user_uuid"
 
 Отправить Request
@@ -26,6 +29,7 @@ PAYOUT FOR DEVELOPERS
 }
 
 Постусловие: удалить тестовые данные
+
 Автор: Юлия
 
 Тест выполнен
