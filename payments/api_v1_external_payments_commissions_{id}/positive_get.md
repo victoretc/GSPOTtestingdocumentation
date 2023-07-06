@@ -16,7 +16,7 @@ Body response:
 
 {
     "id": 7,
-    "payment_type": "string",
+    "payment_type": "bank_card",
     "commission": "1.00",
     "payment_service_id": 8
 }

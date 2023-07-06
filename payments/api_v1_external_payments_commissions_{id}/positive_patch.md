@@ -14,7 +14,7 @@
 4. Ввести в Body -> raw -> JSON:
 
 {
-  "payment_type": "string",
+  "payment_type": "bank_card",
   "commission": "5",
   "payment_service_id": 8
 }
@@ -27,7 +27,7 @@ Body response:
 
 {
     "id": 7,
-    "payment_type": "string",
+    "payment_type": "bank_card",
     "commission": "5.00",
     "payment_service_id": 8
 }
