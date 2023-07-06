@@ -1,5 +1,5 @@
 ### Payments
-#### External Payments Payment Commission (positive)
+#### External Payments Payment Commission {id} (positive)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/{id}
 
