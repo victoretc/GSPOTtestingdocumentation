@@ -1,5 +1,5 @@
 ### Payments
-#### External Payments Payment Commission {id} (positive)
+#### External Payments Payment Commission {id} (negative - non-existent id)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/{id}
 
@@ -9,27 +9,24 @@
 
 
 1. Создать новый запрос в Postman
-2. Выбрать метод PUT для Request
-3. Ввести URL: https://payments.alpha.g-spot.website/v1/external_payments/commissions/28/
+2. Выбрать метод PATCH для Request
+3. Ввести URL: https://payments.alpha.g-spot.website/v1/external_payments/commissions/345/
 4. Ввести в Body -> raw -> JSON:
 
 {
   "payment_type": "bank_card",
-  "commission": "10",
+  "commission": "5",
   "payment_service_id": 8
 }
 
 5. Отправить Request
 
-Ожидаемый результат: Server response: status code 200 - OK
+Ожидаемый результат: Server response: status code 404 - not found
 
 Body response:
 
 {
-    "id": 28,
-    "payment_type": "bank_card",
-    "commission": "10.00",
-    "payment_service_id": 8
+    "detail": "Not found."
 }
 
 
@@ -40,4 +37,4 @@ Body response:
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-06-30 | 12:35 | Passed | Евгений | - | 
+| 2023-07-06 | 15:50 | Passed | Евгений | - | 

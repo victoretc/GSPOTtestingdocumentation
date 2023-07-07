@@ -12,7 +12,7 @@
 3. Ввести URL: https://payments.alpha.g-spot.website/v1/external_payments/commissions/
 4. Ввести в Body -> raw -> JSON:
 {
-  "payment_type": "yoo_money",
+  "payment_type": "bank_card",
   "commission": "0",
   "payment_service_id": 8
 }
@@ -24,7 +24,7 @@ Body response:
 
 {
     "id": 17,
-    "payment_type": "yoo_money",
+    "payment_type": "bank_card",
     "commission": "0.00",
     "payment_service_id": 8
 }

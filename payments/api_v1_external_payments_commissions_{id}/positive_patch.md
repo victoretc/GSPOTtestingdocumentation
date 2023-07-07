@@ -1,5 +1,5 @@
 ### Payments
-#### External Payments Payment Commission (positive)
+#### External Payments Payment Commission {id} (positive)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/{id}
 
@@ -14,7 +14,7 @@
 4. Ввести в Body -> raw -> JSON:
 
 {
-  "payment_type": "string",
+  "payment_type": "bank_card",
   "commission": "5",
   "payment_service_id": 8
 }
@@ -27,7 +27,7 @@ Body response:
 
 {
     "id": 7,
-    "payment_type": "string",
+    "payment_type": "bank_card",
     "commission": "5.00",
     "payment_service_id": 8
 }
