@@ -10,7 +10,17 @@ PAYOUT FOR DEVELOPERS
 
 3.Ввести URL: https://payments.alpha.g-spot.website/v1/payments_accounts/payout/
 
-4.Ввести в Body -> raw -> JSON: {"amount": {"value", "currency", "payout_destination_data": "type_", "account_number", "user_uuid"
+4.Ввести в Body -> raw -> JSON: {
+  "amount": {
+    "value": 500,
+    "currency": "RUB"
+  },
+  "payout_destination_data": {
+    "type_": "BANK_CARD",
+    "account_number": "RRRRRFF344"
+  },
+  "user_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}
 
 Отправить Request
 
@@ -27,8 +37,14 @@ PAYOUT FOR DEVELOPERS
   },
   "user_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
 }
+Фактический результат: Error: response status is 400
+{
+  "error": "The payout day is 25"
+}
 
 Постусловие: удалить тестовые данные
+
+
 
 Автор: Юлия
 
