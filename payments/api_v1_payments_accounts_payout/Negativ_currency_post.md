@@ -24,35 +24,21 @@ PAYOUT FOR DEVELOPERS
 
 Отправить Request
 
-Ожидаемый результат: Server response: status code 200 - OK
+Ожидаемый результат: Отправить Request
+
+Ожидаемый результат: Server response: 400 Bad Request
 
 {
-  "amount": {
-    "value": 500000,
-    "currency": "RUB"
-  },
-  "payout_destination_data": {
-    "type_": "BANK_CARD",
-    "account_number": "string"
-  },
-  "user_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+    "amount": {
+        "currency": [
+            "\"USD\" is not a valid choice."
+        ]
+    }
 }
-
-
-Фактический результат: 
-
-Error: response status is 400
-{
-  "error": "The payout day is 25"
-}
-
-Постусловие: удалить тестовые данные
-
-
 
 Автор: Юлия
 
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-07-06 | 16:00 | Passed | Юлия | - | 
+| 2023-07-09 | 15:30 | Passed | Юлия | - | 
