@@ -24,8 +24,6 @@ PAYOUT FOR DEVELOPERS
 
 Отправить Request
 
-Ожидаемый результат: Отправить Request
-
 Ожидаемый результат: Server response: 400 Bad Request
 
 {
