@@ -37,7 +37,11 @@ PAYOUT FOR DEVELOPERS
   },
   "user_uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
 }
-Фактический результат: Error: response status is 400
+
+
+Фактический результат: 
+
+Error: response status is 400
 {
   "error": "The payout day is 25"
 }
