@@ -1,0 +1,32 @@
+### Payments
+#### account_balances_user_uuid (positive)
+
+Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/user_uuid/
+
+Предусловия:
+Создать новый аккаунт с помощью POST payment_accounts_create_account
+{
+  "user_uuid": "{{$randomUUID}}"
+}
+
+1. Создать новый запрос в Postman
+2. Выбрать метод GET для Request
+3. Ввести URL с новыйм user_uuid: https://payments.alpha.g-spot.website/api/v1/payment_accounts/balances/94ae0e7a-335a-4f4a-b729-a24854d95ec6/
+4. Отправить Request
+
+Ожидаемый результат: Server response: status code 200 - OK
+Пример ответа:
+{
+    "user_uuid": "94ae0e7a-335a-4f4a-b729-a24854d95ec6",
+    "balance": "0.00",
+    "balance_currency": "RUB"
+}
+
+
+
+Автор: Георгий
+
+Тест выполнен
+| Дата | Время | Результат | Имя | Баг № Trello |
+| --- | --- | --- | --- | --- |
+| 2023-07-06 | 20:50 | Passed | Георгий |  | 

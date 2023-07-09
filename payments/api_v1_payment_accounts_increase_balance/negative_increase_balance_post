@@ -19,6 +19,10 @@
 
 Ожидаемый овтет: 
 Error: response status is 400
+{
+    "payment_amount": [
+        "Insufficient Funds"
+    ]}
 
 Автор: Георгий
 Тест выполнен
