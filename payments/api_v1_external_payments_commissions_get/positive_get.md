@@ -14,25 +14,20 @@
 
 Body response:
 
-[
-    {
-        "id": 5,
-        "payment_type": "bank_card",
-        "commission": "10.58",
-        "payment_service_id": 8
-    },
-    {
-        "id": 6,
-        "payment_type": "string",
-        "commission": "10.00",
-        "payment_service_id": 8
-    },
-    {
-        "id": 7,
-        "payment_type": "string",
-        "commission": "1.00",
-        "payment_service_id": 8
-    }
+[ 
+    { "id": 5, 
+    "payment_type": "bank_card", 
+    "commission": "10.58", "payment_service_id": 8 
+    }, 
+    { "id": 6, 
+    "payment_type": "string", 
+    "commission": "10.00", "payment_service_id": 8 
+    }, 
+    { "id": 7, 
+    "payment_type": "string", 
+    "commission": "1.00", 
+    "payment_service_id": 8 
+    } 
 ]
 
 
