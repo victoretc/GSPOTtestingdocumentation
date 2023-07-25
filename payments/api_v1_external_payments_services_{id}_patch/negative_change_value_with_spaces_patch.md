@@ -1,5 +1,5 @@
 ### Payments
-#### External_payments_services_{id}_positive_patch
+#### External_payments_services_{id}_negative_change_value_with_spaces_patch
 
 Тестовые данные: https://payments.alpha.g-spot.website/api/v1/external_payments/services/
 
@@ -9,7 +9,7 @@
 
 2. Ввести URL: https://payments.alpha.g-spot.website/api/v1/external_payments/services/
 
-4. Ввести в конец URL номер id существующего сервиса через / (/7/)
+4. Ввести в конец URL номер id существующего сервиса через / (пример /26/)
 
 3. Выбрать вкладку body=>тип raw=> формат JSON
 
@@ -18,25 +18,23 @@
   "name": "string"
 }
 
-5. Ввести данные в поле "name"-"yookassa"
+5. Ввести пробелы в поле "name"-(пример "     ")
 
 5. Нажать кнопку “Send”
 
-Ожидаемый результат: Server response status code 200 Ok
+Ожидаемый результат: Server response status code 400 Bad Request
 
 Body response:
-
-[
-  {
-    "id": 7,
-    "name": "yookassa"
-  }
-]
+{
+    "name": [
+        "This field may not be blank."
+    ]
+}
 
 
 Автор: Василий
 
 Тест выполнен
-|     Дата      | Время | Результат |   Имя   | Баг № Trello |
-|     ---       |  ---  |    ---    |   ---   |      ---     |
-|  2023-06-28   | 13:42 |   Passed  | Василий |       -      | 
+|     Дата   | Время | Результат |   Имя  | Баг № Trello|
+|     ---    |  ---  |    ---    |   ---  |    ---      |
+|  2023-07-07| 13:27 |   Passed  |Василий |      -      | 
